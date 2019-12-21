@@ -1,4 +1,4 @@
-# Map(_:) -> Use map to loop over a collection and apply the same operation to each element in the collection
+# map(_:) -> Use map to loop over a collection and apply the same operation to each element in the collection
 
 <h3>Example 1:</h3>
 
@@ -51,4 +51,14 @@ let speedArray = cars.map { $0.speed }
 
 <strong>Explanation:</strong> 
 
-we created array of all cars and with the help of 'map' create another array only with speed values
+we created array with all cars and with the help of 'map' create another array only with speed values
+
+# compactMap() -> Returns an array containing the non-nil results of calling the given transformation with each element of this sequence
+
+<h3>Example 4:</h3>
+
+```
+let compactMapped = mapped.compactMap { $0 }
+```
+
+<i>print([1, 2, 5])</i>
